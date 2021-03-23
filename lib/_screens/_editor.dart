@@ -136,7 +136,7 @@ class _EditorState extends State<Editor> {
         await Directory(path).create(recursive: true);
       }
       File file = File(
-          '/storage/emulated/0/socioposter' + file_name.toString() + ".png"
+          '/storage/emulated/0/socioposter/' + file_name.toString() + ".png"
       );
       file.writeAsBytesSync(pngBytes);
       Toast.show(
